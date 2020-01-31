@@ -4,11 +4,12 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-
-<GridPane alignment="center" hgap="10" prefHeight="549.0" prefWidth="848.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" prefHeight="549.0" prefWidth="848.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Pane prefHeight="532.0" prefWidth="848.0">
          <children>
@@ -16,7 +17,8 @@
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
-                    <MenuItem fx:id="newfile" mnemonicParsing="false" onAction="#ListenOpen" text="New File" />
+                        <MenuItem fx:id="openfile" mnemonicParsing="false" onAction="#ListenOpenFile" text="Open File" />
+                    <MenuItem fx:id="newfile" mnemonicParsing="false" onAction="#ListenNew" text="New File" />
                         <MenuItem fx:id="savefile" mnemonicParsing="false" onAction="#ListenSave" text="Save File" />
                   </items>
                 </Menu>
@@ -36,4 +38,10 @@
          </children>
       </Pane>
    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
 </GridPane>

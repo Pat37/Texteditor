@@ -8,12 +8,22 @@ import java.util.ResourceBundle;
 
 public class Controller {
 
-    public void ListenOpen(){
+
+    public void ListenOpenFile(){
+        OpenFile.OpenFile();
+
+    }
+
+
+
+    public void ListenNew(){
         NewFile.NewFile();
     }
 
     public void ListenSave(){
         SaveFile.SaveFile();
     }
+
+
 
 }
