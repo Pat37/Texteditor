@@ -23,7 +23,7 @@ public class Variablen {
     @FXML
     static MenuItem openfile;
     @FXML
-    static TextArea textArea;
+    static TextArea textarea;
 
     static Desktop desktop;
     static FileChooser fileChoosernewfile;

@@ -1,24 +1,19 @@
 package sample;
 
-import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.fxml.Initializable;
-import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
-import javafx.stage.Stage;
-
-
 import java.awt.*;
-import java.awt.event.ActionListener;
 import java.io.*;
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 
 public class OpenFile {
 
 
     public static void OpenFile() throws IOException {
+
+        final ArrayList<String> lineList = new ArrayList<String>();
 
         Variablen.desktop = Desktop.getDesktop();
         Variablen.fileChooseropen = new FileChooser();
@@ -27,20 +22,30 @@ public class OpenFile {
         Variablen.fileChooseropen.setInitialFileName("file.txt");
         Variablen.file = Variablen.fileChooseropen.showOpenDialog(null);
 
-        if(Variablen.file != null){
+        if(Variablen.file != null) {
             Variablen.inputStream = new FileInputStream(Variablen.file);
             Variablen.bufferedReader = new BufferedReader(new InputStreamReader(Variablen.inputStream));
             Variablen.stringBuilder = new StringBuilder();
             String line;
-            while((line = Variablen.bufferedReader.readLine()) != null){
-                Variablen.stringBuilder.append(line + "\n");
+            while ((line = Variablen.bufferedReader.readLine()) != null) {
+                lineList.add(line);
             }
-            Variablen.bufferedReader.close();
-
         }
+            /**
+                 *  Creating an Array,to save the content
+                 */
+                final String[] linearray = new String[lineList.size()];
+                lineList.toArray(linearray);
+                System.out.println(Arrays.toString(linearray));
+                Variablen.bufferedReader.close();
 
+                for(int i = 0; i <= linearray.length; i++){
+                    Variablen.textarea.setText(Variablen.textarea.getText() + linearray[i] + "");
+            }
 
 
     }
+
+
 
 }
