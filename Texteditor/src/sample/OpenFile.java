@@ -40,7 +40,7 @@ public class OpenFile {
                 Variablen.bufferedReader.close();
 
                 for(int i = 0; i <= linearray.length; i++){
-                    Variablen.textarea.setText(Variablen.textarea.getText() + linearray[i] + "");
+                    Variablen.textarea.setText(linearray[i]);
             }
 
 
