@@ -32,7 +32,7 @@ public class OpenFile {
             }
         }
             /**
-                 *  Creating an Array,to save the content
+                 *  Creating an Array,to save the content and give it to the Textarea
                  */
                 final String[] linearray = new String[lineList.size()];
                 lineList.toArray(linearray);
