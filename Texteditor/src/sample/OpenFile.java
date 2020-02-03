@@ -21,11 +21,11 @@ public class OpenFile {
     public static void OpenFile() throws IOException {
 
         Variablen.desktop = Desktop.getDesktop();
-        /*Variablen.fileChooseropen = new FileChooser();
+        Variablen.fileChooseropen = new FileChooser();
         Variablen.fileChooseropen.setTitle("Open File");
         Variablen.fileChooseropen.setSelectedExtensionFilter(new FileChooser.ExtensionFilter("TXT Files (*.txt)","*.txt"));
         Variablen.fileChooseropen.setInitialFileName("file.txt");
-        Variablen.file = Variablen.fileChoosersave.showOpenDialog();
+        Variablen.file = Variablen.fileChooseropen.showOpenDialog(null);
 
         if(Variablen.file != null){
             Variablen.inputStream = new FileInputStream(Variablen.file);
@@ -37,24 +37,9 @@ public class OpenFile {
             }
             Variablen.bufferedReader.close();
 
-        }*/
-        Variablen.openfile.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                Variablen.file = Variablen.fileChooseropen.showOpenDialog(null);
-                if (Variablen.file != null){
-                    openFile(Variablen.file);
-                }
-            }
+        }
 
-            private void openFile(File file){
-                try{
-                    Variablen.desktop.open(file);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+
 
     }
 
