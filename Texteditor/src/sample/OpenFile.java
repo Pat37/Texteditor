@@ -1,17 +1,61 @@
 package sample;
 
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.Initializable;
+import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
 
 import java.awt.*;
+import java.awt.event.ActionListener;
+import java.io.*;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class OpenFile {
 
 
-    public static void OpenFile() {
+    public static void OpenFile() throws IOException {
 
         Variablen.desktop = Desktop.getDesktop();
-        Variablen.fileChoosernewfile = new FileChooser();
-        Variablen.fileChoosernewfile.setTitle("Open File");
-        Variablen.fileChoosernewfile.showSaveDialog(null);
+        /*Variablen.fileChooseropen = new FileChooser();
+        Variablen.fileChooseropen.setTitle("Open File");
+        Variablen.fileChooseropen.setSelectedExtensionFilter(new FileChooser.ExtensionFilter("TXT Files (*.txt)","*.txt"));
+        Variablen.fileChooseropen.setInitialFileName("file.txt");
+        Variablen.file = Variablen.fileChoosersave.showOpenDialog();
+
+        if(Variablen.file != null){
+            Variablen.inputStream = new FileInputStream(Variablen.file);
+            Variablen.bufferedReader = new BufferedReader(new InputStreamReader(Variablen.inputStream));
+            Variablen.stringBuilder = new StringBuilder();
+            String line;
+            while((line = Variablen.bufferedReader.readLine()) != null){
+                Variablen.stringBuilder.append(line + "\n");
+            }
+            Variablen.bufferedReader.close();
+
+        }*/
+        Variablen.openfile.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                Variablen.file = Variablen.fileChooseropen.showOpenDialog(null);
+                if (Variablen.file != null){
+                    openFile(Variablen.file);
+                }
+            }
+
+            private void openFile(File file){
+                try{
+                    Variablen.desktop.open(file);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
     }
+
 }
