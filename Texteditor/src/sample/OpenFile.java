@@ -6,9 +6,6 @@ import javafx.stage.FileChooser;
 import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 public class OpenFile {
@@ -23,30 +20,15 @@ public class OpenFile {
     private TextArea textarea;
 
 
-    public void openFile() throws IOException {
-
-        fileChooseropen = new FileChooser();
-        fileChooseropen.setTitle("Open File");
-
-        fileChooseropen.setSelectedExtensionFilter(new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt"));
-        fileChooseropen.setInitialFileName("file.txt");
-        fileChooseropen.showOpenDialog(null);
-
-        if(file != null){
-            inputStream = new FileInputStream(file);
-            bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-            stringBuilder = new StringBuilder();
-            String line;
-            while((line = bufferedReader.readLine()) != null){
-                stringBuilder.append(line + "\n");
-
-            }
-            textarea.setText(stringBuilder.toString());
-            bufferedReader.close();
+    public void openFile(String filename) throws IOException {
+        FileReader fileReader = new FileReader(filename);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        List lines = new List();
+        String line;
+        while((line = bufferedReader.readLine()) != null){
+            lines.add(line);
         }
-
-
-
+        bufferedReader.close();
     }
 }
 
