@@ -3,7 +3,7 @@ package sample;
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
-import javafx.stage.DirectoryChooser;
+import javafx.scene.control.TextArea;
 import javafx.stage.FileChooser;
 
 

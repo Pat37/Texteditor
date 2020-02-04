@@ -9,9 +9,10 @@ import java.util.ResourceBundle;
 
 public class Controller {
 
+    OpenFile openFile = new OpenFile();
 
     public void ListenOpenFile() throws IOException {
-        OpenFile.OpenFile();
+        openFile.openFile();
     }
 
 
