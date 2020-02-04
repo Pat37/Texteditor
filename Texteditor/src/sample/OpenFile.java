@@ -5,7 +5,10 @@ import java.awt.*;
 import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.Arrays;
+=======
+>>>>>>> master
 
 
 public class OpenFile {
@@ -13,6 +16,7 @@ public class OpenFile {
 
     public static void OpenFile() throws IOException {
 
+<<<<<<< HEAD
         final ArrayList<String> lineList = new ArrayList<String>();
 
         Variablen.desktop = Desktop.getDesktop();
@@ -44,6 +48,17 @@ public class OpenFile {
             }
 
 
+=======
+    public void openFile(String filename) throws IOException {
+        FileReader fileReader = new FileReader(filename);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        List lines = new List();
+        String line;
+        while((line = bufferedReader.readLine()) != null){
+            lines.add(line);
+        }
+        bufferedReader.close();
+>>>>>>> master
     }
 
 
