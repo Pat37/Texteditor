@@ -1,53 +1,51 @@
 package sample;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.TextArea;
 import javafx.stage.FileChooser;
 import java.awt.*;
 import java.io.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 public class OpenFile {
 
-    private InputStream inputStream;
-    private BufferedReader bufferedReader;
-    private StringBuilder stringBuilder;
-    private Desktop desktop;
-    private FileChooser fileChooseropen;
-    private File file;
-    @FXML
-    private TextArea textarea;
 
+    public static void OpenFile() throws IOException {
 
-    public void openFile() throws IOException {
+        final ArrayList<String> lineList = new ArrayList<String>();
 
-        fileChooseropen = new FileChooser();
-        fileChooseropen.setTitle("Open File");
+        Variablen.desktop = Desktop.getDesktop();
+        Variablen.fileChooseropen = new FileChooser();
+        Variablen.fileChooseropen.setTitle("Open File");
+        Variablen.fileChooseropen.setSelectedExtensionFilter(new FileChooser.ExtensionFilter("TXT Files (*.txt)","*.txt"));
+        Variablen.fileChooseropen.setInitialFileName("file.txt");
+        Variablen.file = Variablen.fileChooseropen.showOpenDialog(null);
 
-        fileChooseropen.setSelectedExtensionFilter(new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt"));
-        fileChooseropen.setInitialFileName("file.txt");
-        fileChooseropen.showOpenDialog(null);
-
-        if(file != null){
-            inputStream = new FileInputStream(file);
-            bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-            stringBuilder = new StringBuilder();
+        if(Variablen.file != null) {
+            Variablen.inputStream = new FileInputStream(Variablen.file);
+            Variablen.bufferedReader = new BufferedReader(new InputStreamReader(Variablen.inputStream));
+            Variablen.stringBuilder = new StringBuilder();
             String line;
-            while((line = bufferedReader.readLine()) != null){
-                stringBuilder.append(line + "\n");
-
+            while ((line = Variablen.bufferedReader.readLine()) != null) {
+                lineList.add(line);
             }
-            textarea.setText(stringBuilder.toString());
-            bufferedReader.close();
         }
+            /**
+                 *  Creating an Array,to save the content and give it to the Textarea
+                 */
+                final String[] linearray = new String[lineList.size()];
+                lineList.toArray(linearray);
+                System.out.println(Arrays.toString(linearray));
+                Variablen.bufferedReader.close();
 
+                for(int i = 0; i <= linearray.length; i++){
+                    Variablen.textarea.setText(linearray[i]);
+            }
 
 
     }
+
+
+
 }
-
-
