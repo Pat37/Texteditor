@@ -11,7 +11,9 @@ public class Controller {
 
 
     public void ListenOpenFile() throws IOException {
-        OpenFile.OpenFile();
+
+        OpenFile openFile = new OpenFile();
+        openFile.openFile();
     }
 
 

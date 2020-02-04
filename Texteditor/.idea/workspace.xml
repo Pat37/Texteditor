@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Texteditor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_11_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Texteditor/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Texteditor/sample/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Texteditor/sample/OpenFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Texteditor/sample/OpenFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Texteditor/sample/Variablen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Texteditor/sample/Variablen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Texteditor/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Texteditor/sample/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/OpenFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/OpenFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Variablen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Variablen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -78,8 +63,8 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -88,13 +73,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/OpenFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="324">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -113,6 +123,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/OpenFile.java" />
+      </list>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
@@ -254,41 +273,42 @@
       <workItem from="1580490784209" duration="1022000" />
       <workItem from="1580492369552" duration="52000" />
       <workItem from="1580829002937" duration="92000" />
+      <workItem from="1580829926136" duration="2767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3243000" />
+    <option name="totallyTimeSpent" value="6010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +339,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580488878176" />
-<<<<<<< HEAD
     <state width="1877" height="246" key="GridCell.Tab.0.bottom" timestamp="1580743093716">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -332,8 +351,7 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="246" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580743093716" />
-    <state width="1877" height="246" key="GridCell.Tab.0.right" timestamp="1580743093716">
-=======
+    <state width="1877" height="246" key="GridCell.Tab.0.right" timestamp="1580743093716" />
     <state width="914" height="222" key="GridCell.Tab.0.bottom" timestamp="1580828946856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -351,7 +369,6 @@
     </state>
     <state width="914" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580828946856" />
     <state width="1877" height="286" key="GridCell.Tab.1.bottom" timestamp="1580749774591">
->>>>>>> master
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="246" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580743093716" />
@@ -377,17 +394,38 @@
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580488989745" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/OpenFile.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="217">
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/OpenFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
